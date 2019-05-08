@@ -2,10 +2,8 @@ import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.text.NumberFormatter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeListener;
 import java.util.*;
 
 public class ProgramGUI extends JFrame{
@@ -129,13 +127,13 @@ public class ProgramGUI extends JFrame{
                     Vector<String> charInfo = characterDB.loadCharacter(ID);
 
                     nameTextField.setText(charInfo.get(0));
-                    //nameTextField.setEditable(false);
+                    nameTextField.setEditable(false);
                     classComboBox.setSelectedItem(charInfo.get(1));
-                    //classComboBox.setEditable(false);
+                    classComboBox.setEnabled(false);
                     raceComboBox.setSelectedItem(charInfo.get(2));
-                    //raceComboBox.setEditable(false);
+                    raceComboBox.setEnabled(false);
                     alignmentComboBox.setSelectedItem(charInfo.get(3));
-                    //alignmentComboBox.setEditable(false);
+                    alignmentComboBox.setEnabled(false);
                     levelLabel.setText(charInfo.get(4));
                     experienceSpinner.setValue((Integer.parseInt(charInfo.get(5))));
                     expNextLevelSlider.setValue(Integer.parseInt(charInfo.get(6)));

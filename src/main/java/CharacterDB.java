@@ -31,6 +31,8 @@ public class CharacterDB {
 
     private static final String FETCH_ALL_CHARACTERS = "SELECT * FROM characters ORDER BY id ASC";
 
+    private static final String RETURN_NEWEST_ID = "SELECT rowid FROM characters order by ROWID DESC LIMIT 1";
+
     private static final String LOAD_CHARACTER = "SELECT * FROM characters WHERE id = ?";
 
     private static final String ADD_CHARACTER = "INSERT INTO characters (name, class, race, alignment, level, experience, expNextLevel, totalHP, currentHP, strength, dexterity, constitution, intelligence, wisdom, charisma, armorClass, speed, conditionOne, conditionTwo, conditionThree) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -82,6 +84,24 @@ public class CharacterDB {
             throw new RuntimeException(sqle);
         }
         return characters;
+    }
+
+    String fetchNewID() {
+        // Used by the text writer and characterID jlabel to get a new DB entry's ID the first time it is saved
+        // Added in place of using character name to prevent IO issues with text file
+        String id = "";
+        try (Connection connection = DriverManager.getConnection(DB_CONNECTION_URL);
+             Statement statement = connection.createStatement()) {
+            ResultSet rs = statement.executeQuery(RETURN_NEWEST_ID);
+
+            while (rs.next()) {
+                id = String.valueOf(rs.getInt("id"));
+            }
+
+        } catch (SQLException sqle) {
+            throw new RuntimeException(sqle);
+        }
+        return id;
     }
 
     Vector<String> loadCharacter(Integer ID) {
@@ -142,9 +162,6 @@ public class CharacterDB {
 
 
             }
-            //rs.close();
-            //preparedStatement.close();
-            //connection.close();
 
             return characterInfo;
 
@@ -157,6 +174,9 @@ public class CharacterDB {
 
         try (Connection connection = DriverManager.getConnection(DB_CONNECTION_URL);
              PreparedStatement preparedStatement = connection.prepareStatement(ADD_CHARACTER)) {
+
+            // Used when a character is saved and added to DB for the first time
+            // Uses the vector containing all values from the GUI and adds it to database in correct order
 
             String name = characterInfo.get(0);
             preparedStatement.setString(1, name);
@@ -201,8 +221,6 @@ public class CharacterDB {
 
             preparedStatement.executeUpdate();
 
-            preparedStatement.close();
-
         } catch (SQLException sqle) {
             throw new RuntimeException(sqle);
         }
@@ -212,6 +230,9 @@ public class CharacterDB {
 
         try (Connection connection = DriverManager.getConnection(DB_CONNECTION_URL);
              PreparedStatement preparedStatement = connection.prepareStatement(SAVE_CHARACTER)) {
+
+            // Used when the character exists in DB
+            // Uses vector containing all values from GUI and updates them in the DB using the character's ID
 
             String name = characterInfo.get(0);
             preparedStatement.setString(1, name);
@@ -264,6 +285,8 @@ public class CharacterDB {
     }
 
     void deleteCharacter(Integer ID) {
+
+        // Deletes DB entry using the character's ID
 
         try (Connection connection = DriverManager.getConnection(DB_CONNECTION_URL);
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CHARACTER)) {

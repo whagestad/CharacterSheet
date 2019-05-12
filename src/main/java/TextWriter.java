@@ -8,7 +8,7 @@ public class TextWriter {
 
     void createFile(String id) {
         try {
-            File file = new File("data", "id_" + id + "_notes.txt");
+            File file = new File("src", "id_" + id + "_notes.txt");
             file.createNewFile();
 
         } catch (IOException io) { }
@@ -18,7 +18,7 @@ public class TextWriter {
 
         try {
             // Creates a filename using the character's ID
-            File notes = new File("data", "id_" + id + "_notes.txt");
+            File notes = new File("src", "id_" + id + "_notes.txt");
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(notes));
 
             bufferedWriter.write(textArea.getText());
@@ -32,7 +32,7 @@ public class TextWriter {
     void readText(JTextArea textArea, String id) {
         // Reads the appropriate file using the character's ID
         try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("data/id_" + id + "_notes.txt"));
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("src/id_" + id + "_notes.txt"));
             String line = bufferedReader.readLine();
             while (line != null) {
                 textArea.append(line + "\n");
@@ -49,7 +49,7 @@ public class TextWriter {
     void deleteFile(String id) {
         // Deletes the appropriate file using the character's ID
         try {
-            Path path = Paths.get("data/id_" + id + "_notes.txt");
+            Path path = Paths.get("src/id_" + id + "_notes.txt");
             Files.delete(path);
         } catch (IOException io) {
             JOptionPane.showMessageDialog(null, "Error Deleting Text File For This Character");

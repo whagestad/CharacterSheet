@@ -1,53 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57d3f629-6d4c-41f7-ba80-f4ec9d11b48e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/21b6d4b3-eec6-4218-ab94-b51f75b1255b.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/24f0447c-d506-45fd-baf6-6020b4595c01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6723ef44-c489-4691-bb2d-3987295b0430.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TextWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CharacterDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CharacterSheet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/CharacterSheet.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProgramGUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TextWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterSheet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/characters.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipment.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/items.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills.db" beforeDir="false" />
+    <list default="true" id="57d3f629-6d4c-41f7-ba80-f4ec9d11b48e" name="Default Changelist" comment="Finalized">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Character.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CharacterDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CharacterDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CharacterSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CharacterSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EquipmentDB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ItemDB.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MiscDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProgramGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProgramGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProgramGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProgramGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SheetGUI.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SheetGUI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SkillDB.java" beforeDir="false" />
@@ -129,7 +89,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -202,8 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,6 +191,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +255,9 @@
       <workItem from="1557351936017" duration="2314000" />
       <workItem from="1557582516648" duration="18434000" />
       <workItem from="1557625576835" duration="11953000" />
-      <workItem from="1557683203642" duration="212000" />
+      <workItem from="1557683203642" duration="439000" />
+      <workItem from="1557683684143" duration="40000" />
+      <workItem from="1557683726984" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Update 1">
       <created>1557353817658</created>
@@ -304,16 +266,23 @@
       <option name="project" value="LOCAL" />
       <updated>1557353817658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finalized">
+      <created>1557683550225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557683550225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93422000" />
+    <option name="totallyTimeSpent" value="93649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="23" width="1382" height="986" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20597015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2119403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,7 +319,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1" />
+    <MESSAGE value="Finalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalized" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -360,19 +330,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SheetGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SheetGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SheetGUI.form" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SheetGUI.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/security/ProtectionDomain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -511,16 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ItemDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ItemDB.java" />
     <entry file="das://21b6d4b3-eec6-4218-ab94-b51f75b1255b/schema/main/table/skills">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -528,16 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SkillDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SkillDB.java" />
     <entry file="file://$PROJECT_DIR$/notes.txt" />
     <entry file="das://6723ef44-c489-4691-bb2d-3987295b0430/schema/main/table/characters">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
